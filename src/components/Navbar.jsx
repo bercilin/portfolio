@@ -1,7 +1,7 @@
 import logo from "../assets/sclogo.jpg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaFilePdf } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
@@ -11,6 +11,14 @@ const Navbar = () => {
         <img className="mx-2 w-10" src={logo} alt="logo" />
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+        <a
+          href="https://drive.google.com/file/d/1X9yRmKGbcGYXcocOhh70EQE92uOtCUtG/view"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-blue-400"
+        >
+        <FaFilePdf/>
+        </a>
       <a
           href="https://www.linkedin.com/in/bercilin-jose/"
           target="_blank"
@@ -27,14 +35,7 @@ const Navbar = () => {
         >
         <FaGithub/>
         </a>
-        {/* <a
-          href="https://x.com/SebbieMzing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-400"
-        >
-        <FaSquareXTwitter/>
-        </a> */}
+        
         <a
           href="https://www.instagram.com/bercilinjose/"
           target="_blank"

@@ -13,13 +13,13 @@ const Projects = () => {
             transition={{ duration: 1 }}
             className="w-full md:px-3 lg:w-1/4"
           >
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            {/* <a href={project.link} target="_blank" rel="noopener noreferrer"> */}
               <img
                 src={project.image}
                 alt={project.title}
                 className="mb-6 w-full object-cover h-[150px] rounded"
               />
-            </a>
+            {/* </a> */}
           </motion.div>
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
@@ -27,9 +27,9 @@ const Projects = () => {
             transition={{ duration: 1 }}
             className="w-full max-w-xl flex flex-col justify-between lg:w-3/4"
           >
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+            {/* <a href={project.link} target="_blank" rel="noopener noreferrer"> */}
               <h6 className="mb-2 font-semibold">{project.title}</h6>
-            </a>
+            {/* </a> */}
             <p className="mb-4 text-neutral-400">{project.description}</p>
             <div className=" w-full p-2  flex flex-wrap">
             {project.technologies.map((tech, index) => (

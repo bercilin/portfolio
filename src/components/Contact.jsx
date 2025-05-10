@@ -10,8 +10,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_56fnn6o', 'template_r8egeie', form.current, {
-        publicKey: 'iSgbsjofvOmpk3XY3',
+      .sendForm('service_e4o847a', 'template_nhbw8bx', form.current, {
+        publicKey: '9D_4QsxioGz-vilVB',
       })
       .then(
         () => {
@@ -41,7 +41,7 @@ const Contact = () => {
           transition={{ duration: 1 }}
           className='w-full lg:w-1/4'
         >
-          <div className="address-container px-6 lg:px-6">
+          <div className="address-container px-6 lg:px-6 mobile:mb-4">
             <p className="font-bold mb-2">Address and Phone</p>
             <p>{CONTACT.address}</p>
             <p>{CONTACT.email}</p>
@@ -61,22 +61,22 @@ const Contact = () => {
             className='space-y-4 px-6 lg:px-0'
           >
             <div>
-              <label className='block text-sm font-semibold'>Name *</label>
+              <label className='block text-sm font-semibold mb-2'>Name *</label>
               <input name="name" type="text" required className='w-full p-2 bg-neutral-800 border border-neutral-700 rounded-md text-white' />
             </div>
 
             <div>
-              <label className='block text-sm font-semibold'>Email *</label>
+              <label className='block text-sm font-semibold mb-2'>Email *</label>
               <input name="email" type="email" required className='w-full p-2 bg-neutral-800 border border-neutral-700 rounded-md text-white' />
             </div>
 
             <div>
-              <label className='block text-sm font-semibold'>Subject</label>
-              <input name="subject" type="text" className='w-full p-2 bg-neutral-800 border border-neutral-700 rounded-md text-white' />
+              <label className='block text-sm font-semibold mb-2'>Subject *</label>
+              <input name="subject" type="text" required className='w-full p-2 bg-neutral-800 border border-neutral-700 rounded-md text-white' />
             </div>
 
             <div>
-              <label className='block text-sm font-semibold'>Message</label>
+              <label className='block text-sm font-semibold mb-2'>Message *</label>
               <textarea name="message" required rows={5} className='w-full p-2 bg-neutral-800 border border-neutral-700 rounded-md text-white' />
             </div>
 

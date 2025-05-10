@@ -1,7 +1,7 @@
 import { RiReactjsLine } from "react-icons/ri";
 import { FaJava,FaDocker } from "react-icons/fa";
-import { DiRedis } from "react-icons/di";
-import { SiApachekafka,SiMongodb } from "react-icons/si";
+import { DiRedis,DiGithub } from "react-icons/di";
+import { SiApachekafka,SiMongodb,SiElasticsearch,SiSpringsecurity,SiKubernetes } from "react-icons/si";
 import { BiLogoPostgresql,BiLogoSpringBoot } from "react-icons/bi"
 
 import { motion } from "motion/react";
@@ -20,14 +20,18 @@ const iconVariants = (duration) => ({
 }); 
 
 const techIcons = [
-  { Icon: RiReactjsLine, color: "text-cyan-400", delay: 2.5 },
+  { Icon: RiReactjsLine, color: "text-cyan-500", delay: 2.5 },
   { Icon: FaJava, color: "text-orange-500", delay: 3 },
-  { Icon: BiLogoPostgresql, color: "text-sky-700", delay: 5 },
-  { Icon: DiRedis, color: "text-red-700", delay: 2 },
-  { Icon: BiLogoSpringBoot, color: "text-green-700", delay: 6 },
+  { Icon: BiLogoPostgresql, color: "text-sky-500", delay: 5 },
+  { Icon: DiRedis, color: "text-red-500", delay: 2 },
+  { Icon: BiLogoSpringBoot, color: "text-green-500", delay: 6 },
   { Icon: SiApachekafka, color: "text-blue-500", delay: 4 },
   { Icon: SiMongodb, color: "text-green-500",delay: 3 },
-  { Icon: FaDocker, color: "text-blue-400", delay: 3.5 }
+  { Icon: FaDocker, color: "text-blue-500", delay: 3.5 },
+  { Icon: SiSpringsecurity, color: "text-green-500", delay: 3.5 },
+  { Icon: SiElasticsearch, color: "text-yellow-500", delay: 3.5 },
+  { Icon: SiKubernetes, color: "text-blue-500", delay: 3.5 },
+  { Icon: DiGithub, color: "text-black-500", delay: 3.5 }
 ];
 
 

@@ -1,5 +1,7 @@
-import project1 from "../assets/projects/safe-mom.webp";
-import project2 from "../assets/projects/duka.webp";
+import project1 from "../assets/projects/Hospital-Information-Management-System.jpg";
+import project2 from "../assets/projects/Real-time-alerts.webp";
+import project3 from "../assets/projects/authentication-server.jpeg";
+import project4 from "../assets/projects/Video Call Platform.png"
 
 export const HERO_CONTENT = `
 I’m a passionate Software Engineer specializing in scalable backend systems and robust full-stack solutions. 
@@ -51,51 +53,54 @@ export const PROJECTS = [
     image: project1,
     link: "https://safe-mom-1.onrender.com",
     description: `
-    Contributed to the development of a robust Hospital Management System (HIMS) using Spring Boot and PostgreSQL. 
-    Led a small team of 2 developers, guiding them through module implementations and code reviews. 
-    Implemented secure login functionality using OAuth 2.0 and managed critical modules such as Patient, Warehouse, 
-    Inventory, Pharmacy, Billing, Cashdesk, Laundry, and Operation Theatre. 
-    Ensured seamless integration, optimized performance, and maintained clean, scalable code.
+    Developed a secure, modular Hospital Management System using Spring Boot and PostgreSQL. 
+    Led a 3-member team, managing OAuth2 login and critical modules like Warehouse and Billing.
     `,
     technologies: [
-      "Java",
-      "Spring Boot",
-      "React.js",
-      "Microservices",
-      "Spring Security",
-      "OAuth2",
-      "JWT",
-      "PostgreSQL",
-      "WebSocket",
-      "Redis",
-      "Kafka",
-      "Distributed Scheduling"
+      "Java", "Spring Boot", "React.js", "Microservices", "Spring Security", "OAuth2",
+      "JWT", "PostgreSQL", "WebSocket", "Redis", "Kafka", "Distributed Scheduling"
     ],
   },
   {
-    title: "Real-Time Chat & Video Call Platform",
-    image: project2, // Replace with your actual image reference
-    link: "https://github.com/your-org/webrtc-chat-platform", // Adjust to your actual repo
+  title: "Live COMM – Real-Time Alerts",
+  image: project2, // Replace with actual image path
+  link: "https://github.com/your-org/live-comm", // Replace with actual link
+  description: `
+  Developed a real-time data alert app using WebSocket for instant communication. 
+  Enabled live notifications for critical system events. 
+  Improved communication efficiency across teams and services.
+  `,
+  technologies: [
+    "Java", "Spring Boot", "WebSocket", "React.js", "JWT", "Redis", "Docker"
+  ],
+},
+
+  {
+    title: "Centralized Authorization Server",
+    image: project3, // Replace with actual image
+    link: "https://github.com/your-org/oauth2-auth-server", // Replace with actual link
     description: `
-  Built a scalable microservices architecture for real-time chat and video calls. Integrated 
-  Spring Cloud Gateway, Eureka (HA setup), secure WebSocket signaling, and Mediasoup SFU 
-  for media relay. Used Coturn for NAT traversal and secure ICE negotiation. Horizontally 
-  scalable design with centralized OAuth2 authentication and secure JWT flow via cookies.
+  Developed a centralized authorization server using Spring Security and OAuth2. 
+  Enabled secure SSO and token-based authentication. 
+  Integrated across multiple internal applications for unified access control.
+  `,
+    technologies: [
+      "Java", "Spring Boot", "Spring Security", "OAuth2", "JWT", "Authorization Server"
+    ],
+  },
+    {
+    title: "Real-Time Chat & Video Call Platform - Under Development",
+    image: project4,
+    link: "https://github.com/your-org/webrtc-chat-platform",
+    description: `
+    Built a scalable chat & video platform with secure WebSocket signaling and Mediasoup SFU. 
+    Integrated Spring Cloud Gateway, Coturn, OAuth2, and Docker-based deployment.
     `,
     technologies: [
-      "Java",
-      "Spring Boot",
-      "Spring Cloud Gateway",
-      "Eureka",
-      "OAuth2",
-      "WebSocket",
-      "Mediasoup",
-      "Coturn",
-      "Docker",
-      "Nginx",
-      "React"
+      "Java", "Spring Boot", "Spring Cloud Gateway", "Eureka", "OAuth2", "WebSocket",
+      "Mediasoup", "Coturn", "Docker", "Nginx", "React"
     ],
-  }
+  },
 ];
 
 export const CONTACT = {
